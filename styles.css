@@ -121,6 +121,7 @@ a.destination-card:hover, a.destination-card:focus-visible { transform: translat
 .community-copy > p:last-child { max-width: 420px; margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .community-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid rgba(255,255,255,.1); border-left: 1px solid rgba(255,255,255,.1); }
 .community-links a { position: relative; min-height: 90px; display: grid; align-content: center; padding: 18px 46px 18px 20px; border-right: 1px solid rgba(255,255,255,.1); border-bottom: 1px solid rgba(255,255,255,.1); text-decoration: none; transition: background .2s; }
+.community-links a:last-child { grid-column: 1 / -1; }
 .community-links a:hover, .community-links a:focus-visible { background: rgba(168,240,0,.055); }
 .community-links span { font: italic 800 20px/1 var(--display); text-transform: uppercase; }
 .community-links small { margin-top: 7px; color: var(--muted); font-size: 9px; }
@@ -171,6 +172,7 @@ a.destination-card:hover, a.destination-card:focus-visible { transform: translat
   .community { padding-bottom: 65px; }
   .community-panel { padding: 24px 20px; }
   .community-links { grid-template-columns: 1fr; }
+  .community-links a:last-child { grid-column: 1; }
   .site-footer { grid-template-columns: 1fr auto; }
   .site-footer > p { display: none; }
 }
