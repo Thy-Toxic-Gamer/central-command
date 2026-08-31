@@ -128,12 +128,19 @@ a.destination-card:hover, a.destination-card:focus-visible { transform: translat
 .platform-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .support-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .social-links { grid-template-columns: 1fr; }
-.community-links a { position: relative; min-height: 90px; display: grid; align-content: center; padding: 18px 46px 18px 20px; border-right: 1px solid rgba(255,255,255,.1); border-bottom: 1px solid rgba(255,255,255,.1); text-decoration: none; transition: background .2s; }
+.community-links a { --link-aura: var(--toxic); position: relative; min-height: 90px; display: grid; align-content: center; padding: 18px 46px 18px 20px; border-right: 1px solid rgba(255,255,255,.1); border-bottom: 1px solid rgba(255,255,255,.1); background: linear-gradient(115deg, color-mix(in srgb, var(--link-aura) 11%, transparent), transparent 64%); box-shadow: inset 3px 0 0 color-mix(in srgb, var(--link-aura) 62%, transparent), inset 0 0 28px color-mix(in srgb, var(--link-aura) 7%, transparent); text-decoration: none; transition: background .2s, border-color .2s, box-shadow .2s, transform .2s; }
+.community-links a[href*="twitch.tv"] { --link-aura: #9146ff; }
+.community-links a[href*="youtube.com"] { --link-aura: #ff304f; }
+.community-links a[href*="kick.com"] { --link-aura: #53fc18; }
+.community-links a[href*="discord.gg"] { --link-aura: #5865f2; }
+.community-links a[href*="streamelements.com"] { --link-aura: #00e5c3; }
+.community-links a[href*="x.com"] { --link-aura: #1d9bf0; }
+.community-links a[href*="instagram.com"] { --link-aura: #ff3e98; }
 .social-links a { min-height: 170px; }
-.community-links a:hover, .community-links a:focus-visible { background: rgba(168,240,0,.055); }
+.community-links a:hover, .community-links a:focus-visible { z-index: 1; border-color: color-mix(in srgb, var(--link-aura) 58%, rgba(255,255,255,.1)); background: linear-gradient(115deg, color-mix(in srgb, var(--link-aura) 20%, transparent), color-mix(in srgb, var(--link-aura) 4%, transparent) 72%); box-shadow: inset 3px 0 0 var(--link-aura), inset 0 0 38px color-mix(in srgb, var(--link-aura) 13%, transparent), 0 0 24px color-mix(in srgb, var(--link-aura) 28%, transparent); transform: translateY(-2px); }
 .community-links span { font: italic 800 20px/1 var(--display); text-transform: uppercase; }
 .community-links small { margin-top: 7px; color: var(--muted); font-size: 9px; }
-.community-links b { position: absolute; right: 18px; top: 50%; color: var(--toxic); transform: translateY(-50%); }
+.community-links b { position: absolute; right: 18px; top: 50%; color: var(--link-aura); filter: drop-shadow(0 0 7px color-mix(in srgb, var(--link-aura) 72%, transparent)); transform: translateY(-50%); }
 
 .site-footer { min-height: 110px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 20px; border-top: 1px solid rgba(255,255,255,.09); color: var(--muted); }
 .footer-brand { display: flex; align-items: center; gap: 11px; }
