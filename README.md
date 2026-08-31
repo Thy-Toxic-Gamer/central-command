@@ -1,6 +1,6 @@
-# ThyToxicGamer Central Command
+# ⁅𝐓𝐡𝐲𝐓☣︎𝐱𝐢𝐜𝐆𝐚𝐦𝐞𝐫⁆ Central Command
 
-The central hub for ThyToxicGamer—bringing the Game Catalog, Poll Center, Command Center, Appeals, Discord, stream tools, and community links together in one place.
+The central hub for ⁅𝐓𝐡𝐲𝐓☣︎𝐱𝐢𝐜𝐆𝐚𝐦𝐞𝐫⁆—bringing the Game Catalog, Poll Center, Command Center, Appeals, Discord, stream tools, and community links together in one place.
 
 ## Current version
 

@@ -48,9 +48,6 @@ button { font: inherit; }
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
-.brand-mark { display: inline-grid; place-items: center; min-width: 54px; height: 38px; border: 1px solid var(--line-strong); color: #fff; background: rgba(159, 236, 0, .07); font-family: var(--display); font-size: 23px; font-weight: 900; letter-spacing: -.08em; transform: skew(-7deg); }
-.brand-mark span { color: var(--toxic); }
-.brand-mark.small { min-width: 42px; height: 32px; font-size: 18px; }
 .brand-copy { display: grid; line-height: 1; }
 .brand-copy strong, .footer-brand strong { font-family: var(--display); font-size: 18px; font-style: italic; letter-spacing: .06em; }
 .brand-copy small, .footer-brand small { margin-top: 5px; color: var(--toxic); font: 700 9px/1 var(--body); letter-spacing: .2em; }
@@ -154,7 +151,8 @@ a.destination-card:hover, a.destination-card:focus-visible { transform: translat
 
 @media (max-width: 560px) {
   .page-shell { width: min(100% - 18px, var(--max-width)); }
-  .brand-copy { display: none; }
+  .brand-copy strong { font-size: 13px; letter-spacing: .015em; }
+  .brand-copy small { display: none; }
   .header-nav { margin-left: auto; }
   .header-nav .nav-discord { padding: 9px 11px; font-size: 10px; }
   .hero { min-height: 570px; margin-top: 9px; }
