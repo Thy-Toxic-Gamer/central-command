@@ -8,7 +8,7 @@ The live central hub for the Game Catalog, Poll Center, Command Center, Appeals 
 
 Central Command 1.0 provides:
 
-Every connected destination now presents **Ver. 1.0** as its current public release. Earlier component build numbers remain documented only as development history.
+Every connected destination now presents **Ver. 1.0** as its first official release. Pre-launch development builds remain below 1.0 and culminate at **Build 1.0**.
 
 - One live destination page for every public system
 - A centralized, filterable release feed for all connected projects
@@ -22,4 +22,4 @@ Every connected destination now presents **Ver. 1.0** as its current public rele
 - [Poll Center](https://thy-toxic-gamer.github.io/thytoxicgamer-polls/)
 - [Command Center](https://thy-toxic-gamer.github.io/thytoxicgamer-commands/)
 - [Appeals Center](https://thy-toxic-gamer.github.io/appeals-center/)
-- Discord, Twitch, YouTube, Kick, X, Instagram, and StreamElements
+- Discord, Twitch, YouTube, Kick, X, Instagram, TikTok, and StreamElements
