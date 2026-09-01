@@ -24,10 +24,15 @@ body {
   margin: 0;
   min-width: 320px;
   color: var(--text);
-  background:
-    radial-gradient(circle at 12% 9%, rgba(121, 224, 0, 0.08), transparent 32rem),
-    radial-gradient(circle at 92% 82%, rgba(255, 62, 152, 0.05), transparent 30rem),
-    var(--bg);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(180deg, rgba(3,6,4,.72), rgba(3,6,4,.9)),
+    radial-gradient(circle at 78% 16%, rgba(168,240,0,.08), transparent 34rem),
+    url("assets/toxic-network-background-v1.webp");
+  background-position: center top;
+  background-size: auto, auto, cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   font-family: var(--body);
   line-height: 1.5;
 }
@@ -230,22 +235,6 @@ a.destination-card:hover, a.destination-card:focus-visible { transform: translat
   .site-footer > p { display: none; }
 }
 
-/* Shared toxic watermark — branded background layer */
-body { isolation: isolate; }
-body::before {
-  content: "☣";
-  position: fixed;
-  z-index: 0;
-  top: 16vh;
-  right: -9vw;
-  color: rgba(168,240,0,.022);
-  font: 900 clamp(360px,52vw,760px)/1 "Arial Black","Segoe UI Symbol",sans-serif;
-  -webkit-text-stroke: 2px rgba(168,240,0,.065);
-  text-shadow: 0 0 80px rgba(168,240,0,.055), 0 0 190px rgba(168,240,0,.025);
-  transform: rotate(-10deg);
-  pointer-events: none;
-  user-select: none;
-}
 @media (max-width:700px) {
-  body::before { top: 28vh; right: -32vw; font-size: clamp(340px,105vw,560px); opacity: .78; }
+  body { background-attachment: scroll; }
 }
