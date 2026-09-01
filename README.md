@@ -1,6 +1,6 @@
 # ⁅𝐓𝐡𝐲𝐓☣︎𝐱𝐢𝐜𝐆𝐚𝐦𝐞𝐫⁆ Central Command
 
-The live central hub for the Game Catalog, Poll Center, Command Center, Appeals Center, streaming platforms, Discord, community links, and public project updates.
+The live central hub for the Game Catalog, Poll Center, Command Directory, Appeals Center, streaming platforms, Discord, community links, and public project updates.
 
 ## Current version
 
@@ -20,6 +20,6 @@ Every connected destination now presents **Ver. 1.0** as its first official rele
 
 - [Game Catalog](https://thy-toxic-gamer.github.io/Games/)
 - [Poll Center](https://thy-toxic-gamer.github.io/thytoxicgamer-polls/)
-- [Command Center](https://thy-toxic-gamer.github.io/thytoxicgamer-commands/)
+- [Command Directory](https://thy-toxic-gamer.github.io/thytoxicgamer-commands/)
 - [Appeals Center](https://thy-toxic-gamer.github.io/appeals-center/)
 - Discord, Twitch, YouTube, Kick, X, Instagram, TikTok, and StreamElements
