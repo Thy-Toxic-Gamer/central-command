@@ -8,6 +8,8 @@ The live central hub for the Game Catalog, Poll Center, Command Center, Appeals 
 
 Central Command 1.0 provides:
 
+Every connected destination now presents **Ver. 1.0** as its current public release. Earlier component build numbers remain documented only as development history.
+
 - One live destination page for every public system
 - A centralized, filterable release feed for all connected projects
 - The complete public Game Catalog release history, moved out of the catalog
