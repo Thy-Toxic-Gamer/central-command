@@ -18,8 +18,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=1.0">
+  <script src="script.js?v=1.0" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to Central Command</a>
@@ -35,6 +35,7 @@
 
       <nav class="header-nav" aria-label="Primary navigation">
         <a href="#destinations">Destinations</a>
+        <a href="#updates">Updates</a>
         <a href="#community">Community</a>
         <a class="nav-discord" href="https://discord.gg/RQxw6r9Mpw" target="_blank" rel="noopener noreferrer">Join Discord</a>
       </nav>
@@ -48,14 +49,14 @@
           <div class="eyebrow"><span class="pulse-dot"></span> System online <span>Ver. 1.0</span></div>
           <p class="hero-kicker">THE 𝐓☣︎𝐱𝐢c ONE PRESENTS</p>
           <h1 id="hero-title">CENTRAL<br><em>COMMAND</em></h1>
-          <p class="hero-summary">Your direct access point to ⁅𝐓𝐡𝐲𝐓☣︎𝐱𝐢𝐜𝐆𝐚𝐦𝐞𝐫⁆ Game Catalog, live polls, command references, community, and everything coming next.</p>
+          <p class="hero-summary">Your direct access point to the Game Catalog, Poll Center, Command Center, Appeals Center, community, and every project update—all in one place.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#destinations">Enter Central Command <span aria-hidden="true">↓</span></a>
             <a class="button button-secondary" href="https://www.twitch.tv/thytoxicgamer" target="_blank" rel="noopener noreferrer">Watch on Twitch <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="hero-rail" aria-hidden="true">
-          <span>GAMES</span><i></i><span>POLLS</span><i></i><span>COMMANDS</span><i></i><span>COMMUNITY</span>
+          <span>GAMES</span><i></i><span>POLLS</span><i></i><span>COMMANDS</span><i></i><span>APPEALS</span><i></i><span>UPDATES</span>
         </div>
       </section>
 
@@ -108,17 +109,127 @@
             <span class="card-action">Browse commands <b aria-hidden="true">↗</b></span>
           </a>
 
-          <article class="destination-card appeals-card is-planned" aria-label="Appeals Center, planned">
+          <a class="destination-card appeals-card" href="https://thy-toxic-gamer.github.io/appeals-center/">
             <div class="card-topline">
               <span class="card-icon" aria-hidden="true">◇</span>
-              <span class="status status-planned">Planned</span>
+              <span class="status status-live">Live</span>
             </div>
             <div class="card-copy">
               <p class="card-label">MODERATION SUPPORT</p>
               <h3>Appeals Center</h3>
-              <p>A dedicated place for submitting and tracking community moderation appeals.</p>
+              <p>Submit an individual or universal appeal, track every case, and review staff decisions securely.</p>
             </div>
-            <span class="card-action">In development <b aria-hidden="true">⌁</b></span>
+            <span class="card-action">Open Appeals Center <b aria-hidden="true">↗</b></span>
+          </a>
+        </div>
+      </section>
+
+
+      <section class="updates section-block" id="updates" aria-labelledby="updates-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">02 / SYSTEM UPDATES</p>
+            <h2 id="updates-title">Central release feed</h2>
+          </div>
+          <p>One official location for updates across every connected ⁅𝐓𝐡𝐲𝐓☣︎𝐱𝐢𝐜𝐆𝐚𝐦𝐞𝐫⁆ system.</p>
+        </div>
+
+        <div class="updates-toolbar" role="group" aria-label="Filter updates by project">
+          <button class="update-filter active" type="button" data-update-filter="all" aria-pressed="true">All systems</button>
+          <button class="update-filter" type="button" data-update-filter="central" aria-pressed="false">Central Command</button>
+          <button class="update-filter" type="button" data-update-filter="games" aria-pressed="false">Game Catalog</button>
+          <button class="update-filter" type="button" data-update-filter="polls" aria-pressed="false">Poll Center</button>
+          <button class="update-filter" type="button" data-update-filter="commands" aria-pressed="false">Command Center</button>
+          <button class="update-filter" type="button" data-update-filter="appeals" aria-pressed="false">Appeals Center</button>
+        </div>
+
+        <div class="updates-feed" aria-live="polite">
+          <article class="update-card central-update" data-update-project="central">
+            <div class="update-meta">
+              <span>Central Command</span>
+              <strong>Ver. 1.0</strong>
+              <time datetime="2026-09-01">September 1, 2026</time>
+            </div>
+            <div class="update-copy">
+              <h3>Central Command 1.0 is live</h3>
+              <p>Launched the unified home for the Game Catalog, Poll Center, Command Center, Appeals Center, streaming platforms, community links, and every future public release note.</p>
+              <ul>
+                <li>Promoted Appeals Center from planned to live.</li>
+                <li>Added the centralized, filterable release feed.</li>
+                <li>Moved public Game Catalog updates here so project news has one official home.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="update-card appeals-update" data-update-project="appeals">
+            <div class="update-meta">
+              <span>Appeals Center</span>
+              <strong>Live release</strong>
+              <time datetime="2026-09-01">September 1, 2026</time>
+            </div>
+            <div class="update-copy">
+              <h3>Complete appeal and archive workflow</h3>
+              <p>The Appeals Center is ready for public use from submission through final staff archive.</p>
+              <ul>
+                <li>Twitch sign-in with verified Twitch identity and email backup.</li>
+                <li>Individual and Universal Appeals with separate platform cases and decisions.</li>
+                <li>Applicant status tracking with automatic refresh.</li>
+                <li>Private Staff Review for owner, admin, and moderator roles.</li>
+                <li>Protected archive containing the full case record from opening through closure.</li>
+                <li>Discord appeal notifications, final log delivery, six-month retention, and safe test-ticket controls.</li>
+              </ul>
+              <a href="https://thy-toxic-gamer.github.io/appeals-center/">Open Appeals Center <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="update-card games-update" data-update-project="games">
+            <div class="update-meta">
+              <span>Game Catalog</span>
+              <strong>Ver. 1.13</strong>
+              <time datetime="2026-08-31">August 31, 2026</time>
+            </div>
+            <div class="update-copy">
+              <h3>Game Catalog release history</h3>
+              <p>The catalog remains focused on games and requests. Its public update history now lives here in Central Command.</p>
+              <ol class="release-list">
+                <li><b>1.13</b><span><strong>Staff-confirmed automatic VOD lookup</strong> securely finds recent YouTube broadcasts and Twitch archives, then requires staff verification before publishing.</span></li>
+                <li><b>1.12</b><span><strong>Completed Requests &amp; VODs</strong> added the full closeout workflow, permanent YouTube links, 60-day Twitch links, viewer completion details, and Discord announcements.</span></li>
+                <li><b>1.11</b><span><strong>Organized Staff Administration</strong> consolidated service controls, cooldowns, schedule preview, and Discord health into Admin.</span></li>
+                <li><b>1.10</b><span><strong>Staff Schedule Preview</strong> introduced a safe fictional preview that expires automatically and changes no real request data.</span></li>
+                <li><b>1.9</b><span><strong>Public Schedule Preview</strong> displays the next paid, approved, and scheduled request without exposing viewer or payment information.</span></li>
+                <li><b>1.0</b><span><strong>First Public Release</strong> launched Twitch sign-in, secure staff review, payments, scheduling, Discord notifications, moderator verification, catalog IDs, expanded platform libraries, and the redesigned artwork system.</span></li>
+                <li><b>0.9</b><span><strong>Payment + Request Controls</strong> added payment confirmation, donation notifications, request service controls, cooldown management, and clear paid states.</span></li>
+                <li><b>0.8</b><span><strong>Live Twitch Request Workflow</strong> moved requests into the secure multi-user system with approvals, denial reasons, status updates, expiration, cancellation, and retention.</span></li>
+                <li><b>0.7</b><span><strong>Catalog Foundation</strong> established the multi-platform library, responsive dashboard, rotating previews, artwork presentation, and original request experience.</span></li>
+              </ol>
+              <a href="https://thy-toxic-gamer.github.io/Games/">Open Game Catalog <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="update-card commands-update" data-update-project="commands">
+            <div class="update-meta">
+              <span>Command Center</span>
+              <strong>Live system</strong>
+              <time datetime="2026-09-01">Current</time>
+            </div>
+            <div class="update-copy">
+              <h3>One command reference for every source</h3>
+              <p>Public and staff references are organized by Streamer.bot, StreamElements, Sapphire, Nightbot, and ThyToxicBot, including Sapphire slash-command coverage and consistent ⁅𝐓𝐡𝐲𝐓☣︎𝐱𝐢𝐜𝐆𝐚𝐦𝐞𝐫⁆ naming.</p>
+              <a href="https://thy-toxic-gamer.github.io/thytoxicgamer-commands/">Open Command Center <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="update-card polls-update" data-update-project="polls">
+            <div class="update-meta">
+              <span>Poll Center</span>
+              <strong>Live system</strong>
+              <time datetime="2026-09-01">Current</time>
+            </div>
+            <div class="update-copy">
+              <h3>Community voting connected</h3>
+              <p>The live Poll Center is connected to Central Command for active community voting and staff-managed poll controls.</p>
+              <a href="https://thy-toxic-gamer.github.io/thytoxicgamer-polls/">Open Poll Center <span aria-hidden="true">↗</span></a>
+            </div>
           </article>
         </div>
       </section>
@@ -127,9 +238,9 @@
         <div class="community-panel">
           <div class="community-main">
             <div class="community-copy">
-              <p class="section-number">02 / STAY CONNECTED</p>
+              <p class="section-number">03 / STAY CONNECTED</p>
               <h2 id="community-title">Enter the 𝐓☣︎𝐱𝐢c community</h2>
-              <p>Watch live, join the Discord, keep up with updates, or support the stream directly.</p>
+              <p>Watch live, join the Discord, follow every release from Central Command, or support the stream directly.</p>
             </div>
 
             <section class="community-group" aria-labelledby="streaming-platforms-title">
