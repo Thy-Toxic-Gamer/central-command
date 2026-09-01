@@ -165,7 +165,8 @@ a.destination-card:hover, a.destination-card:focus-visible { transform: translat
 .community-links a[href*="streamelements.com"] { --link-aura: #00e5c3; }
 .community-links a[href*="x.com"] { --link-aura: #1d9bf0; }
 .community-links a[href*="instagram.com"] { --link-aura: #ff3e98; }
-.social-links a { min-height: 170px; }
+.community-links a[href*="tiktok.com"] { --link-aura: #69c9d0; }
+.social-links a { min-height: 115px; }
 .community-links a:hover, .community-links a:focus-visible { z-index: 1; border-color: color-mix(in srgb, var(--link-aura) 58%, rgba(255,255,255,.1)); background: linear-gradient(115deg, color-mix(in srgb, var(--link-aura) 20%, transparent), color-mix(in srgb, var(--link-aura) 4%, transparent) 72%); box-shadow: inset 3px 0 0 var(--link-aura), inset 0 0 38px color-mix(in srgb, var(--link-aura) 13%, transparent), 0 0 24px color-mix(in srgb, var(--link-aura) 28%, transparent); transform: translateY(-2px); }
 .community-links span { font: italic 800 20px/1 var(--display); text-transform: uppercase; }
 .community-links small { margin-top: 7px; color: var(--muted); font-size: 9px; }
