@@ -55,8 +55,10 @@ async function refreshLivePlatforms() {
     const response = await fetch(liveStatusApi, { cache: "no-store" });
     if (!response.ok) throw new Error("Live status unavailable");
     const payload = await response.json();
+    // Twitch is the single live source because every broadcast is distributed
+    // across Twitch, YouTube, and Kick from the same production session.
+    const live = Boolean(payload?.platforms?.twitch?.live);
     platformCards.forEach((card) => {
-      const live = Boolean(payload?.platforms?.[card.dataset.livePlatform]?.live);
       card.classList.toggle("is-live-now", live);
       const label = card.querySelector(".platform-status em");
       if (label) label.textContent = live ? "Live Now" : "Offline";
