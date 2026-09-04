@@ -45,3 +45,30 @@ const requestedProject = window.location.hash.slice(1);
 if (requestedProject) {
   selectUpdateProject(requestedProject, false);
 }
+
+const liveStatusApi = "https://hdwhhyrlmktiynyujozk.supabase.co/functions/v1/poll-center-api/api/live/status";
+const platformCards = document.querySelectorAll("[data-live-platform]");
+
+async function refreshLivePlatforms() {
+  if (!platformCards.length) return;
+  try {
+    const response = await fetch(liveStatusApi, { cache: "no-store" });
+    if (!response.ok) throw new Error("Live status unavailable");
+    const payload = await response.json();
+    platformCards.forEach((card) => {
+      const live = Boolean(payload?.platforms?.[card.dataset.livePlatform]?.live);
+      card.classList.toggle("is-live-now", live);
+      const label = card.querySelector(".platform-status em");
+      if (label) label.textContent = live ? "Live Now" : "Offline";
+    });
+  } catch {
+    platformCards.forEach((card) => {
+      card.classList.remove("is-live-now");
+      const label = card.querySelector(".platform-status em");
+      if (label) label.textContent = "Status unavailable";
+    });
+  }
+}
+
+refreshLivePlatforms();
+window.setInterval(refreshLivePlatforms, 15000);
